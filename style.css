@@ -20,7 +20,7 @@ body {
   bottom: 0;
   margin: 10px;
   font-size: 20px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .header {
@@ -42,6 +42,8 @@ body {
   align-items: center;
   font-size: 50px;
   transition: 100ms;
+  border-radius: 20px;
+  z-index: 1;
 }
 
 .add:hover {
@@ -50,7 +52,7 @@ body {
   background-color: #3F72AF;
 }
 
-.form .show{
+.form.active{
   position: absolute;
   left: 0;
   top: 0;
@@ -58,4 +60,25 @@ body {
   height: 100%;
   background-color: black;
   opacity: 40%;
+  transition: 200ms;
+  z-index: 2;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: 200ms;
+  opacity: 0;
+  z-index: 0;
+  color: white;
+}
+
+.exit {
+  cursor: pointer;
 }

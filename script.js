@@ -1,4 +1,17 @@
 let myLibrary = [];
+const btn = document.querySelector(".add");
+const form = document.querySelector(".form");
+const exit = document.querySelector(".exit")
+
+
+btn.addEventListener("click", () => {
+  form.classList.toggle("active");
+})
+
+exit.addEventListener("click", () => {
+  form.classList.toggle("active");
+})
+
 
 class Book {
   constructor() {
@@ -30,3 +43,4 @@ function printLibrary() {
     console.log(myLibrary[i]);
   }
 }
+
