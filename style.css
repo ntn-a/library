@@ -1,3 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Roboto+Condensed:wght@300&display=swap');
+
 body {
   margin: 0px;
+  background-color: #F9F7F7;
+  color: #3F72AF;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.header {
+  margin: 10px;
+  margin-bottom: 10vh;
+  font-size: 40px;
+}
+
+.main {
+  display: flex;
+}
+
+.add {
+  display: flex;
+  height: 10rem;
+  width: 10rem;
+  border: #3F72AF solid 1px;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  transition: 100ms;
+}
+
+.add:hover {
+  border: #F9F7F7 solid 1px;
+  color: #F9F7F7;
+  background-color: #3F72AF;
 }
