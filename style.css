@@ -31,6 +31,8 @@ body {
 
 .main {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .add {
@@ -41,6 +43,20 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 50px;
+  transition: 100ms;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.book {
+  display: flex;
+  flex-wrap: wrap;
+  height: 10rem;
+  width: 10rem;
+  border: #3F72AF solid 1px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
   transition: 100ms;
   border-radius: 20px;
   z-index: 1;
@@ -126,6 +142,7 @@ body {
   padding: 5px;
   margin: 10px;
   transition: 200ms;
+  border-radius: 10px;
 }
 
 .submit:hover {
@@ -134,3 +151,4 @@ body {
   color: #3F72AF;
   transition: 200ms;
 }
+
