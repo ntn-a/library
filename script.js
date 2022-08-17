@@ -79,7 +79,15 @@ function displayBooks() {
   for (var i = 0; i < myLibrary.length; i++) {
     const content = document.createElement("div");
     content.classList.add("book");
-    content.textContent = myLibrary[i].title;
+    const booktitle = document.createElement("div");
+    const bookauthor = document.createElement("div");
+    const bookpages = document.createElement("div");
+    booktitle.textContent = myLibrary[i].getTitle();
+    bookauthor.textContent = myLibrary[i].getAuthor();
+    bookpages.textContent = myLibrary[i].getPages();
+    content.appendChild(booktitle);
+    content.appendChild(bookauthor);
+    content.appendChild(bookpages);
     main.appendChild(content);
   }
 }

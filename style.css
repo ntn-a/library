@@ -50,11 +50,12 @@ body {
 
 .book {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   height: 10rem;
   width: 10rem;
   border: #3F72AF solid 1px;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-size: 30px;
   transition: 100ms;
@@ -69,7 +70,7 @@ body {
   cursor: pointer;
 }
 
-.form.active{
+.form.active {
   display: flex;
   position: absolute;
   visibility:visible;
